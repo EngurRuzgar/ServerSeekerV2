@@ -1,9 +1,10 @@
 name: Auto release from tag
 
-on: 
+on:
   push:
-    tags:
-    - '*'
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   
 jobs:
   build:
